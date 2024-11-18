@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>Frontend Mentor | Results summary component</title>
+  </head>
+  <body>
+    <main class="wrapper">
+      <div class="column">
+        <h2 class="result-title result-title--light">Your Result</h2>
+        <div class="result-wrapper">
+          <span class="result">00</span>
+          <span class="result-total">of 100</span>
+          <div class="loader"></div>
+        </div>
+        <h3 class="result-report">Great</h3>
+        <p class="result-remark">
+          click the
+          <b>continue</b>
+          button to generate your score and see how you compare with others!
+        </p>
+      </div>
+      <div class="column">
+        <h2 class="result-title">Summary</h2>
+        <ul class="summaries">
+          <li class="summary-test summary-test--red">
+            <span class="summary-test-category">
+              <img src="./assets/images/icon-reaction.svg" alt="#" class="category-icon" />
+              Reaction
+            </span>
+            <p class="summary-test-score-wrapper">
+              <span class="summary-test-score">00</span>
+              / 100
+            </p>
+          </li>
+          <li class="summary-test summary-test--orange">
+            <span class="summary-test-category">
+              <img src="./assets/images/icon-memory.svg" alt="#" class="category-icon" />
+              Memory
+            </span>
+            <p class="summary-test-score-wrapper">
+              <span class="summary-test-score">00</span>
+              / 100
+            </p>
+          </li>
+          <li class="summary-test summary-test--green">
+            <span class="summary-test-category">
+              <img src="./assets/images/icon-verbal.svg" alt="#" class="category-icon" />
+              Verbal
+            </span>
+            <p class="summary-test-score-wrapper">
+              <span class="summary-test-score">00</span>
+              / 100
+            </p>
+          </li>
+          <li class="summary-test summary-test--blue">
+            <span class="summary-test-category">
+              <img src="./assets/images/icon-visual.svg" alt="#" class="category-icon" />
+              Visual
+            </span>
+            <p class="summary-test-score-wrapper">
+              <span class="summary-test-score">00</span>
+              / 100
+            </p>
+          </li>
+        </ul>
+        <button class="btn">Continue</button>
+      </div>
+    </main>
+  </body>
+</html>
