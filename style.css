@@ -124,6 +124,10 @@ body {
   color: var(--Light-lavender);
 }
 
+.result-title--dark {
+  text-align: left;
+}
+
 .result-wrapper {
   width: auto;
   aspect-ratio: 1/1;
